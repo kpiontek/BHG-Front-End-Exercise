@@ -1,0 +1,146 @@
+.header {
+  background: #fff;
+  box-shadow: 0px 0px 4px 1px #222;
+  position: relative;
+
+  @media (max-width: @screen-md) {
+    text-align: center;
+  }
+
+  .header-top {
+    padding: 30px 0;
+
+    .nav {
+      padding-right: 0;
+
+      & > li {
+        @media (max-width: @screen-md) {
+          float: none;
+          display: inline-block;
+        }
+
+        a {
+          text-transform: uppercase;
+          padding: 10px;
+        }
+      }
+    }
+
+    .input-group {
+      width: 100%;
+    }
+
+    .search-group-addon {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      z-index: 9999;
+
+      .btn-search {
+        background: url('../../images/search-icon.png') no-repeat center center;
+        text-indent: -9999px;
+        width: 18px;
+        height: 18px;
+        border: none;
+      }
+    }
+  }
+
+  .navbar-default {
+    border: none;
+    .container-fluid {
+      padding: 0;
+
+      a {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.hero {
+  background: url('../../images/hero.jpg') no-repeat;
+  height: 540px;
+  position: relative;
+
+  @media (max-width: @screen-md) {
+    height: auto;
+  }
+
+  .info {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: @grid-gutter-width;
+
+    @media (min-width: @screen-md) {
+      position: absolute;
+      left: 92px;
+      top: 211px;
+    }
+  }
+}
+
+.top-bar {
+  background: url('../../images/top-bar.jpg') no-repeat (@grid-gutter-width / 2) 0;
+  margin-top: @row-pad-xl;
+  margin-bottom: @row-pad-xl;
+  padding-top: @row-pad-lg;
+
+  .h4 {
+    display: block;
+    margin-bottom: @row-pad-md;
+    font-weight: bold;
+  }
+}
+
+.footer-wrapper {
+  background: #2e3136;
+
+  .page-bottom {
+    background: @brand-primary;
+    padding-top: @row-pad-xl;
+    padding-bottom: @row-pad-xl;
+
+    .h3 {
+      color: #fff;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: @row-pad-md;
+      display: block;
+    }
+
+    .form-control {
+      background: @brand-info;
+      color: #fff;
+      border: none;
+
+      &::-webkit-input-placeholder {
+        color: #fff;
+      }
+      &::-moz-placeholder {
+        color: #fff;
+      }
+      &:-ms-input-placeholder {
+        color: #fff;
+      }
+      &:-moz-placeholder {
+        color: #fff;
+      }
+    }
+  }
+
+  .footer {
+    color: #959595;
+    padding-top: @row-pad-lg;
+
+    a {
+      color: #fff;
+    }
+
+    .contact-info {
+      margin-bottom: @row-pad-lg;
+    }
+  }
+}
