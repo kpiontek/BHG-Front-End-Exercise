@@ -51,6 +51,10 @@
     .container-fluid {
       padding: 0;
 
+      .btn {
+        max-height: @navbar-height;
+      }
+
       a {
         text-transform: uppercase;
         font-size: 1.2em;
@@ -84,6 +88,7 @@
 
 .top-bar {
   background: url('../../images/top-bar.jpg') no-repeat (@grid-gutter-width / 2) 0;
+  background-size: ~"calc(100% - @{grid-gutter-width})" auto;
   margin-top: @row-pad-xl;
   margin-bottom: @row-pad-xl;
   padding-top: @row-pad-lg;

@@ -6830,6 +6830,9 @@ h6,
 .header .navbar-default .container-fluid {
   padding: 0;
 }
+.header .navbar-default .container-fluid .btn {
+  max-height: 50px;
+}
 .header .navbar-default .container-fluid a {
   text-transform: uppercase;
   font-size: 1.2em;
@@ -6859,6 +6862,7 @@ h6,
 }
 .top-bar {
   background: url('../../images/top-bar.jpg') no-repeat 15px 0;
+  background-size: calc(100% - 30px) auto;
   margin-top: 48px;
   margin-bottom: 48px;
   padding-top: 36px;
